@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:threads_app_clone/pages/home_page.dart';
+import 'package:threads_app_clone/theme/theme.dart';
+import 'package:threads_app_clone/view/home_page.dart';
 
 void main() {
-  runApp(const MaterialApp(
+
+  runApp( MaterialApp(
+    theme: ThemeData(
+      appBarTheme: AppTheme.black,
+    ),
     debugShowCheckedModeBanner: false,
-    home: HomePage(),
+    home: const HomePage(),
   ));
 }
 
