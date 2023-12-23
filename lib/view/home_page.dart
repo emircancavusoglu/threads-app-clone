@@ -16,6 +16,12 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      body: Text(""),
+      bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
+      ]),
     );
   }
 }
