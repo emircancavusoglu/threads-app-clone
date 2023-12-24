@@ -1,20 +1,16 @@
-// import 'package:flutter/material.dart';
-//
-// class BottomNavigationBar extends StatefulWidget {
-//   const BottomNavigationBar({Key? key, required List<BottomNavigationBarItem> items}) :
-//         super(key: key);
-//
-//   @override
-//   State<BottomNavigationBar> createState() => _BottomNavigationBarState();
-// }
-//
-// class _BottomNavigationBarState extends State<BottomNavigationBar> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const BottomNavigationBar(items: <BottomNavigationBarItem>[
-//       BottomNavigationBarItem(icon: Icon(Icons.home)),
-//       BottomNavigationBarItem(icon: Icon(Icons.home)),
-//       BottomNavigationBarItem(icon: Icon(Icons.home)),
-//     ]);
-//   }
-// }
+import 'package:flutter/material.dart';
+
+class BottomNavigation extends StatelessWidget {
+  const BottomNavigation({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomNavigationBar(items: const <BottomNavigationBarItem>[
+      BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
+      BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
+      BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
+    ]);
+  }
+}

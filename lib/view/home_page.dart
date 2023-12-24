@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:threads_app_clone/theme/theme.dart';
 
+import '../product/widgets/bottom_navigation_bar.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,11 +19,9 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Text(""),
-      bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "",backgroundColor: Colors.black,),
-      ]),
+      bottomNavigationBar: const BottomNavigation(),
     );
   }
 }
+
+
