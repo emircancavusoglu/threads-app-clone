@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:threads_app_clone/network/image_network.dart';
+import 'package:threads_app_clone/product/widgets/card.dart';
 import 'package:threads_app_clone/theme/theme.dart';
 
 import '../product/widgets/bottom_navigation_bar.dart';
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Text(""),
+      body: const CardWidget(),
       bottomNavigationBar: const BottomNavigation(),
     );
   }
