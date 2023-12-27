@@ -13,9 +13,7 @@ class BottomNavigation extends StatelessWidget {
       BottomNavigationBarItem(icon: LineIcon.search(color: Colors.grey),label: ""),
       BottomNavigationBarItem(icon: LineIcon.edit(color: Colors.grey),label: ""),
       BottomNavigationBarItem(icon: LineIcon.heart(color: Colors.grey),label: ""),
-      BottomNavigationBarItem(icon: LineIcon.accessibleIcon(color: Colors.grey,),
-        label: ""
-      ),
+      BottomNavigationBarItem(icon: Icon(Icons.person_outline,color: Colors.grey,),label: ""),
     ]
     );
   }
