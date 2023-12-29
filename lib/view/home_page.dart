@@ -14,11 +14,17 @@ class HomePage extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Image.network(
+          child: Image.asset(
             ImageNetwork.threadsLogo,
             width: 50,
             height: 40,
           ),
+
+          // child: Image.network(
+          //   ImageNetwork.threadsLogo,
+          //   width: 50,
+          //   height: 40,
+          // ),
         ),
       ),
       body: const CardWidget(),
