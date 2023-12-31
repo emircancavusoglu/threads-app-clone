@@ -6,18 +6,15 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Card(
+    return Card(
       child: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CircleAvatar(
-              backgroundImage: NetworkImage(ImageNetwork.profile),
-              radius: 20,
-            ),
-            SizedBox(width: 8),
-            Expanded(
+            buildCircleAvatar(ImageNetwork.profile),
+            const SizedBox(width: 8),
+            const Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -29,12 +26,19 @@ class CardWidget extends StatelessWidget {
                 ],
               ),
             ),
-            Text("30m"),
-            SizedBox(width: 10,),
-            Icon(Icons.menu),
+            const Text("30m"),
+            const SizedBox(width: 10,),
+            const Icon(Icons.menu),
           ],
         ),
       ),
     );
+  }
+
+  CircleAvatar buildCircleAvatar(String profileImage) {
+    return CircleAvatar(
+            backgroundImage: NetworkImage(profileImage),
+            radius: 20,
+          );
   }
 }
