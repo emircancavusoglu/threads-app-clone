@@ -19,12 +19,6 @@ class HomePage extends StatelessWidget {
             width: 50,
             height: 40,
           ),
-
-          // child: Image.network(
-          //   ImageNetwork.threadsLogo,
-          //   width: 50,
-          //   height: 40,
-          // ),
         ),
       ),
       body: const CardWidget(),

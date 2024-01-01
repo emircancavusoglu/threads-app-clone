@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 import 'package:threads_app_clone/network/image_network.dart';
 
 class CardWidget extends StatelessWidget {
@@ -23,7 +24,22 @@ class CardWidget extends StatelessWidget {
                   Text(
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                   ),
-                ],
+
+                  Padding(
+                    padding: EdgeInsets.only(top: 10),
+                    child: Row(
+                      children: [
+                        Icon(LineIcons.heartAlt,color: Colors.red),
+                        SizedBox(width: 5,),
+                        Icon(LineIcons.comment),
+                        SizedBox(width: 5,),
+                        Icon(Icons.change_circle_outlined),
+                        SizedBox(width: 5,),
+                        Icon(Icons.send),
+                      ],
+                    ),
+                  ),
+                  ],
               ),
             ),
             const Text("30m"),
