@@ -13,7 +13,15 @@ class CardWidget extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            buildCircleAvatar(ImageNetwork.profile),
+            CircleAvatar(
+              child: buildCircleAvatar(ImageNetwork.profile),
+            ),
+            const SizedBox(width: 8),
+            const VerticalDivider(
+              color: Colors.black,
+              thickness: 1.0,
+              width: 10,
+            ),
             const SizedBox(width: 8),
             const Expanded(
               child: Column(
@@ -24,26 +32,25 @@ class CardWidget extends StatelessWidget {
                   Text(
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                   ),
-
                   Padding(
                     padding: EdgeInsets.only(top: 10),
                     child: Row(
                       children: [
-                        Icon(LineIcons.heartAlt,color: Colors.red),
-                        SizedBox(width: 5,),
+                        Icon(LineIcons.heartAlt, color: Colors.red),
+                        SizedBox(width: 5),
                         Icon(LineIcons.comment),
-                        SizedBox(width: 5,),
+                        SizedBox(width: 5),
                         Icon(Icons.change_circle_outlined),
-                        SizedBox(width: 5,),
+                        SizedBox(width: 5),
                         Icon(Icons.send),
                       ],
                     ),
                   ),
-                  ],
+                ],
               ),
             ),
             const Text("30m"),
-            const SizedBox(width: 10,),
+            const SizedBox(width: 10),
             const Icon(Icons.menu),
           ],
         ),
@@ -53,8 +60,8 @@ class CardWidget extends StatelessWidget {
 
   CircleAvatar buildCircleAvatar(String profileImage) {
     return CircleAvatar(
-            backgroundImage: NetworkImage(profileImage),
-            radius: 20,
-          );
+      backgroundImage: NetworkImage(profileImage),
+      radius: 20,
+    );
   }
 }
