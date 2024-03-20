@@ -19,7 +19,9 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: const CardWidget(),
+      body: ListView.builder(itemBuilder: (context, index) {
+        return CardWidget();
+      },),
       bottomNavigationBar: const BottomNavigation(),
     );
   }
